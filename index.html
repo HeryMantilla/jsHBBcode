@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>jsHbbcode</title>
+		<link rel="icon" href="./favicon.png" type="image/x-icon"/>
+        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon"/>
+		<link href="./jshbbcode.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="./jshbbcode.js"></script>
+		<script type="text/javascript" src="./jshlang.js"></script>
+		<script type="text/javascript">
+
+			var xhttp = new XMLHttpRequest(),
+				render = null,
+				str = '';
+
+			xhttp.onreadystatechange = function() {
+
+				if (this.readyState == 4 && this.status == 200) {
+					//str = jsHBBcode.parser('Including an image<br><br>[img]https://www.bbcode.org/images/lubeck_small.jpg[/img]<br><br>[code]$b = "hello world";\n\necho $b;[/code]<br><br>Making the image clickable (in this case linking to the original image)<br><br>[url=https://www.bbcode.org/images/lubeck.jpg][img]https://www.bbcode.org/images/lubeck_small.jpg[/img][/url]<br><br>It is possible to color the text [color=red]red[/color] [color=green]green[/color] [color=blue]blue[/color] - or [color=#DB7900]whatever[/color]<br><br>It [size=14]g[/size][size=18]r[/size][size=22]o[/size][size=26]o[/size][size=28]w[/size][size=32]s[/size]!!!<br>[center]This is some centered text[/center]<br>[spoiler][quote]\&#x27;Tis be a bad day[/quote][/spoiler]', this.responseText);
+
+					str = jsHBBcode.parser('[tip="Hanami"]The hero dies at the end![/tip] :-D :-( :smile:', this.responseText);
+					render = document.getElementById('render');
+					if (render) { render.innerHTML = str; }
+				}
+
+			};
+			xhttp.open('GET', './jshbbcode.tpl');
+			xhttp.send();
+			
+		</script>
+		<style>
+
+			/* General page style. */
+			html, body {
+				background-color: #ffffff;
+				font-family: Verdana, Arial, Helvetica, sans-serif;
+				padding: 8px;
+				overflow: auto;
+				overflow-x: hidden;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="render"></div>
+	</body>
+</html>
