@@ -1,0 +1,420 @@
+.bbHCode {
+    font-style: inherit;
+    font-size: inherit;
+    color: #000000;
+    margin-bottom: 3px;
+}
+
+.bbHCode.bbLang {
+    position: relative;
+    display: block;
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+}
+
+.bbHCode.bbdyk {
+    position: relative;
+    display: block;
+    font-size: 11px;
+    min-width: 50px;
+    width: auto;
+    max-width: 400px;
+    margin-left: 10px;
+}
+
+.bbHCode.bbdyk .dyk {
+    position: relative;
+    display: block;
+    clear: both;
+    padding-bottom: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
+
+.bbHCode.bbdyk .bbdykText {
+    position: relative;
+    display: block;
+    background-color: #666666;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 6px 0;
+    box-shadow: #d1d1d1 0px 0px 0px 4px;
+    padding: 12px;
+}
+
+.bbHCode.bbdyk.bbLeft::after {
+    margin-top: -5px;
+    margin-right: 4px;
+    top: 10%;
+    right: 100%;
+    content: "";
+    position: absolute;
+    display: block;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent #d1d1d1 transparent transparent;
+}
+
+.bbHCode.bbIFrame {
+    position: relative;
+    display: block;
+    border: 1px solid #cccccc;
+    background-color: #fafafa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 6px;
+    height: auto;
+    max-height: 500px;
+}
+
+.bbHCode.bbIFrame iframe {
+    border: 1px solid #cccccc;
+    margin-top: 6px;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    height: -webkit-fill-available;
+    max-height: 500px;
+}
+
+.bbHCode.bbTable {
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    border: 1px solid #cccccc;
+    border-collapse: collapse;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.bbHCode.bbTable tr {
+    background-color: #f8f8f8;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.bbHCode.bbTable td {
+    height: 18px;
+    line-height: 18px;
+    padding: 4px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+ul.bbHCode {
+    display: block;
+    list-style: none;
+    padding: 0;
+    font: inherit;
+    font-size: inherit;
+}
+
+ul.bbHCode > li {
+    position: relative;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    padding: 2px 4px 4px 2px;
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+    margin: 4px 0;
+    border-radius: 4px;
+    counter-increment: step-counter;
+    max-width: 200px;
+}
+
+ul.bbHCode > li:before {
+    font-size: 11px;
+    margin-right: 10px;
+    content: counter(step-counter);
+    background: #fafbfc;
+    border-radius: 100%;
+    border: 1px solid #cccccc;
+    color: #000000;
+    width: 1.2em;
+    text-align: center;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.bbHCode.bbLink {
+    text-decoration: none;
+	color: #7552cc;
+}
+
+.bbHCode.bbLink:hover {
+    text-decoration: underline;
+}
+
+.bbHCode.bbCenter {
+    position: relative;
+    display: block;
+    margin: auto auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.bbHCode.bbTextB {
+    font-weight: bold;
+}
+
+.bbHCode.bbTextU {
+    text-decoration: underline;
+}
+
+.bbHCode.bbTextI {
+    font-style: italic;
+}
+
+.bbHCode.bbTextS {
+    text-decoration: line-through;
+}
+
+.bbHCode.bbImg {
+    height: auto;
+    width: auto;
+}
+
+.bbHCode.bbImg.bbVA {
+	vertical-align: baseline;
+}
+
+.bbHCode.bbTooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.bbHCode.bbRule {
+    border: 0;
+    height: 2px;
+    width: auto;
+    background: url(../images/hrow.png) repeat-x;
+}
+
+.bbHCode.bbFrame {
+    border: 1px solid #cccccc;
+    position: relative;
+    display: block;
+}
+
+.bbHCode.bbFrame .bbHeader {
+    position: relative;
+    display: block;
+    height: 24px;
+    line-height: 22px;
+    border: 0;
+    background: #fafafa url('../images/spoiler.png') no-repeat right center;
+    background-size: 16px 16px;
+    background-position: calc(100% - 5px) center;
+}
+
+.bbHCode.bbFrame .bbHeader img {
+    vertical-align: middle;
+    max-height: 24px;
+    max-width: 24px;
+    padding-left: 3px;
+    cursor: pointer;
+}
+
+.bbHCode.bbFrame .bbHeader span {
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.bbHCode.bbFrame .bbHeader .bbSpoiler {
+    color: #ff3c1f;
+}
+
+.bbHCode.bbFrame .bbContent {
+    position: relative;
+    display: none;
+    visibility: hidden;
+    padding: 8px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+}
+
+.bbHCode.bbFrame .bbContent .bbQ1 {
+    position: absolute;
+    display: block !important;
+    clear: both;
+    visibility: visible;
+    border: 0;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background: url(../images/bg_quote_header.png) no-repeat center center;
+}
+
+.bbHCode.bbFrame .bbContent .bbQ2 {
+    position: absolute;
+    display: block !important;
+    clear: both;
+    visibility: visible;
+    margin-top: 12px;
+    border: 0;
+    bottom: -6px;
+    right: -5px;
+    height: 16px;
+    width: 16px;
+    background: url(../images/bg_quote_content.png) no-repeat center center;
+}
+
+.bbHCode.bbFrame .bbContent .bbText {
+    display: block;
+    visibility: visible;
+    position: relative;
+    border: 0;
+    padding: 14px 12px 4px 18px;
+}
+
+.bbHCode.bbFade {
+    height: 1px;
+    opacity: 1;
+    animation: fadeInAnimation ease 6s infinite alternate;
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+}
+
+.bbHCode .bbWarn {
+    position: relative;
+    display: inline-block;
+    border-right: 1px solid #cccccc;
+    width: 22px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ce0700;
+}
+
+.bbHCode.bbFrame .bbModUserText {
+    position: relative;
+    display: inline-block;
+    border: 0;
+    margin: 0;
+    top: 7px;
+    padding: 0 8px 0px 8px;
+    vertical-align: top;
+}
+
+.bbHCode.bbHAlert {
+    position: relative;
+    display: block;
+    border: 1px solid;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, .67);
+    font-family: inherit;
+    margin-bottom: 6px;
+}
+
+.bbHCode.bbHAlert .bbAlertBorder {
+    position: relative;
+    display: block;
+    border: 6px solid;
+}
+
+.bbHCode.bbHAlert.bbAlertInfo, .bbHCode.bbHAlert .bbAlertBorder.bbAlertInfo {
+    border-color: #009bbb;
+    background-color: #def9ff;
+}
+
+.bbHCode.bbHAlert.bbAlertWarn, .bbHCode.bbHAlert .bbAlertBorder.bbAlertWarn {
+    border-color: #fb8c00;
+    background-color: #fff3e5;
+}
+
+.bbHCode.bbHAlert.bbAlertError, .bbHCode.bbHAlert .bbAlertBorder.bbAlertError {
+    border-color: #f44336;
+    background-color: #fdecea;
+}
+
+.bbHCode.bbHAlert.bbAlertSuccess, .bbHCode.bbHAlert .bbAlertBorder.bbAlertSuccess {
+    border-color: #0af167;
+    background-color: #e6fdef;
+}
+
+.bbHCode.bbHAlert .bbAlertContainer {
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: calc(100% - 4px) 4px;
+    padding: 12px;
+}
+
+.bbHCode.bbHAlert .bbAlertContainer.bbAlertInfo::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 4px;
+    right: 4px;
+    height: 9px;
+    width: 9px;
+    border-radius: 100%;
+    background-color: #009bbb;
+    border: 1px solid #007c95;
+}
+
+.bbHCode.bbHAlert .bbAlertContainer.bbAlertWarn::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 4px;
+    right: 4px;
+    height: 9px;
+    width: 9px;
+    border-radius: 100%;
+    background-color: #fb8c00;
+    border: 1px solid #c87000;
+}
+
+.bbHCode.bbHAlert .bbAlertContainer.bbAlertError::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 4px;
+    right: 4px;
+    height: 9px;
+    width: 9px;
+    border-radius: 100%;
+    background-color: #f44336;
+    border: 1px solid #e21a0c;
+}
+
+.bbHCode.bbHAlert .bbAlertContainer.bbAlertSuccess::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 4px;
+    right: 4px;
+    height: 9px;
+    width: 9px;
+    border-radius: 100%;
+    background-color: #0af167;
+    border: 1px solid #08c052;
+}
+
+.bbHCode.bbHAlert .bbAlertTitle {
+    position: relative;
+    display: block;
+    font-weight: 600;
+    padding: 6px;
+}
+
+.bbHCode.bbHAlert .bbAlertContent {
+    position: relative;
+    display: block;
+    padding: 6px;
+    margin-top: 4px;
+}
