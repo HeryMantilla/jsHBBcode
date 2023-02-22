@@ -2,7 +2,7 @@
 
 Examples in: https://anyrequest.com.co/jsHbbcode/
 
-```js
+```JavaScript
 xhttp.onreadystatechange = function() {
 
 	if (this.readyState == 4 && this.status == 200) {
